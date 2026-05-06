@@ -9,3 +9,14 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
+
+body {}
+.kontainer {}
+.kontainer .meny {}
+.kontainer .innehall {}
+.kontainer .rutnat {}
+.kontainer .rutnat .box {}
+.kontainer .rutnat .box a {}
+.kontainer .rutnat .box img{
+    width: 300px;
+}
