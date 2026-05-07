@@ -10,13 +10,108 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
-body {}
-.kontainer {}
-.kontainer .meny {}
-.kontainer .innehall {}
-.kontainer .rutnat {}
-.kontainer .rutnat .box {}
-.kontainer .rutnat .box a {}
-.kontainer .rutnat .box img{
-    width: 300px;
+/* Grundinställningar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0e14;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.kontainer {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Rubriker */
+h1 {
+    font-size: 3rem;
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ff007b;
+    margin-bottom: 20px;
+}
+
+/* Navigationsmeny */
+.meny {
+    background: #1a1d24;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.meny a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.meny a:hover {
+    color: #00d4ff;
+}
+
+/* Rutnätet (Grid) för spelen */
+.rutnat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* Individuella spelboxar */
+.box {
+    background: #1a1d24;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+    border-color: #00d4ff;
+}
+
+/* Bilderna i boxarna */
+.box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #00d4ff;
+}
+
+/* Text under bilderna */
+.box p {
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsiv sida */
+@media (max-width: 800px) {
+    .rutnat {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolumner på surfplattor */
+    }
+}
+
+@media (max-width: 500px) {
+    .rutnat {
+        grid-template-columns: 1fr; /* 1 kolumn på mobiler */
+    }
 }
