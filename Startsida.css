@@ -2,10 +2,22 @@
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-body, h1, h2, h3, h4, h5, h6, p, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -106,12 +118,14 @@ h2 {
 /* Responsiv sida */
 @media (max-width: 800px) {
     .rutnat {
-        grid-template-columns: repeat(2, 1fr); /* 2 kolumner på surfplattor */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 kolumner på surfplattor */
     }
 }
 
 @media (max-width: 500px) {
     .rutnat {
-        grid-template-columns: 1fr; /* 1 kolumn på mobiler */
+        grid-template-columns: 1fr;
+        /* 1 kolumn på mobiler */
     }
 }

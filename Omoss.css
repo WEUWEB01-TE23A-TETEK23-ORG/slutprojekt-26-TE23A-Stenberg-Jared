@@ -1,0 +1,144 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Grundinställningar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0e14;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.kontainer {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Huvudrubrik */
+h1 {
+    font-size: 3rem;
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Navigationsmeny */
+.meny {
+    background: #1a1d24;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.meny a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.meny a:hover {
+    color: #00d4ff;
+}
+
+/* Innehållsbox */
+.innehall {
+    background: #1a1d24;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtil neonrosa glöd när man hovrar över textboxen */
+.innehall:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+    border-color: #00d4ff;
+}
+
+/* Underrubriken */
+.innehall h2 {
+    color: #ff007b;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Gör det som står i <strong> (Gamer Room) neonblått */
+.innehall h2 strong {
+    color: #00d4ff;
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+}
+
+/* Brödtext/Paragrafer */
+.innehall p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+/* Den sista paragrafen (game on!) får lite extra fokus */
+.innehall p:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Responsiv design för mobiler */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .innehall {
+        padding: 25px;
+    }
+
+    .innehall h2 {
+        font-size: 1.3rem;
+    }
+
+    .meny a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
