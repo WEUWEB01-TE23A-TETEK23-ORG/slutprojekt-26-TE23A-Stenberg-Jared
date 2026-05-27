@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -26,7 +27,9 @@ ul {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #0b0e14;
     color: #ffffff;
     display: flex;
