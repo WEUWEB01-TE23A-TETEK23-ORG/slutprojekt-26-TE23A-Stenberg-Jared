@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamer Room</title>
     <link rel="stylesheet" href="Startsida.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
 </head>
 
 <body>
+    <div id="cookie-ruta" class="cookie-overlay">
+        <div class="cookie-box">
+            <h2>Vi använder kakor 🍪</h2>
+            <p>För att komma in på Gamer Room måste du acceptera våra kakor. Accepterar du?</p>
+            <button onclick="accepteraKakor()" class="btn-ja">Ja</button>
+            <button onclick="nekaKakor()" class="btn-nej">Nej</button>
+        </div>
+    </div>
+
     <div class="kontainer">
         <h1>Gamer Room</h1>
         <div class="meny">
