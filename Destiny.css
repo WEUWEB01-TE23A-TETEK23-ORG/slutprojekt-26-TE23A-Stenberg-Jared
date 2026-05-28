@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Grundinställningar och mjuk scroll (för internlänkarna) */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0b0f19;
+    color: #cbd5e1;
+    background-image: radial-gradient(circle at top, #141b2d 0%, #0b0f19 70%);
+    background-attachment: fixed;
+}
+
+/* Layout - CSS Grid för att strukturera sidan automatiskt */
+.kontainer {
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typsnitt och hierarki för rubriker */
+h1,
+h2,
+h3 {
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+}
+
+/* Den översta H1:an (Gamer Room) */
+.kontainer>h1 {
+    font-size: 3rem;
+    color: #e5c27b;
+    /* Destiny Guld */
+    text-align: center;
+    text-shadow: 0 0 15px rgba(229, 194, 123, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Navigationsmeny */
+.meny {
+    background: rgba(20, 27, 45, 0.8);
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #2a3441;
+    margin-bottom: 40px;
+}
+
+.meny a {
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.meny a:hover {
+    color: #00e6ff;
+    /* Arc-blå neon */
+}
+
+/* Header och underrubrik-menyn (Wikipedia-stil) */
+header {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-left: 4px solid #e5c27b;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Innehållsförteckningens knappar */
+header nav a {
+    background: rgba(255, 255, 255, 0.05);
+    color: #00e6ff;
+    padding: 8px 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(0, 230, 255, 0.2);
+    transition: all 0.2s ease;
+}
+
+header nav a:hover {
+    background: rgba(0, 230, 255, 0.1);
+    border-color: #00e6ff;
+    box-shadow: 0 0 10px rgba(0, 230, 255, 0.2);
+}
+
+/* Sektionsstil för artiklarna */
+article {
+    margin-bottom: 60px;
+    padding-top: 20px;
+}
+
+article h2 {
+    font-size: 2rem;
+    color: #e5c27b;
+    border-bottom: 1px solid #2a3441;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+article ul {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+article li {
+    margin-bottom: 10px;
+}
+
+article b,
+article strong {
+    color: #ffffff;
+}
+
+/* Faktarutan (Aside) - Inspirerad av Destinys "Lore-tabs" */
+aside {
+    background: #121824;
+    padding: 30px;
+    border-top: 3px solid #e5c27b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-size: 0.95rem;
+    height: fit-content;
+}
+aside img {
+    width: 200px;
+}
+
+aside h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #2a3441;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+aside h3 {
+    color: #00e6ff;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+aside strong {
+    display: block;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+aside p {
+    margin: 5px 0 0 0;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #2a3441;
+    font-family: 'Rajdhani', sans-serif;
+    color: #64748b;
+    letter-spacing: 1px;
+}
+
+/* GRID LAYOUT - Placerar Main och Aside bredvid varandra på dator */
+@media (min-width: 1000px) {
+    .kontainer {
+        display: grid;
+        grid-template-columns: 3fr 1fr; /* Main tar 75% bredd, Aside 25% */
+        grid-template-areas:
+            "main-h1 main-h1"
+            "meny meny"
+            "header header"
+            "main aside"
+            "footer footer";
+        gap: 0 40px;
+    }
+
+    /* Koppla HTML-delarna till grid-områdena */
+    .kontainer>h1 {
+        grid-area: main-h1;
+    }
+
+    .meny {
+        grid-area: meny;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/* Mobilanpassning */
+@media (max-width: 999px) {
+    aside {
+        margin-top: 50px; /* Skapar utrymme om rutan hamnar längst ner */
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
