@@ -135,7 +135,7 @@ h2 {
 }
 
 /* ==========================================
-   COOKIEs POPUP STYLING
+   COOKIES POPUP STYLING
    ========================================== */
 
 /* Blockerar hela skärmen med en mörk, genomskinlig bakgrund */
@@ -145,7 +145,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(11, 14, 20, 0.98); /* Matchar bakgrundsfärgen */
+    background-color: rgba(11, 14, 20, 0.90); /* Matchar bakgrundsfärgen */
     display: flex;
     justify-content: center;
     align-items: center;
