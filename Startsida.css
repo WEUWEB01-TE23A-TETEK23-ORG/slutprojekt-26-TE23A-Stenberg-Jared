@@ -133,16 +133,14 @@ h2 {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .rutnat {
         grid-template-columns: 1fr;
         /* 1 kolumn på mobiler */
     }
 }
 
-/* ==========================================
-   KAKOR POPUP STYLING
-   ========================================== */
+/* KAKOR POPUP STYLING */
 
 /* Blockerar hela skärmen med en mörk, genomskinlig bakgrund */
 .cookie-overlay {
