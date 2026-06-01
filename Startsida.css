@@ -48,13 +48,16 @@ body {
 h1 {
     font-size: 3rem;
     color: #00d4ff;
+    /* Neonblå */
     text-shadow: 0 0 10px #00d4ff;
+    /* Neonblå */
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
 h2 {
     color: #ff007b;
+    /* Neonrosa */
     margin-bottom: 20px;
 }
 
@@ -77,6 +80,7 @@ h2 {
 
 .meny a:hover {
     color: #00d4ff;
+    /* Neonblått skuggeffekt */
 }
 
 /* Rutnätet (Grid) för spelen */
@@ -100,6 +104,7 @@ h2 {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
     border-color: #00d4ff;
+    /* Neonblå ram */
 }
 
 /* Bilderna i boxarna */
@@ -109,6 +114,7 @@ h2 {
     object-fit: cover;
     display: block;
     border-bottom: 2px solid #00d4ff;
+    /* Neonblå linje under bilden */
 }
 
 /* Text under bilderna */
@@ -135,7 +141,7 @@ h2 {
 }
 
 /* ==========================================
-   COOKIES POPUP STYLING
+   KAKOR POPUP STYLING
    ========================================== */
 
 /* Blockerar hela skärmen med en mörk, genomskinlig bakgrund */
@@ -145,19 +151,23 @@ h2 {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(11, 14, 20, 0.90); /* Matchar bakgrundsfärgen */
+    background-color: rgba(11, 14, 20, 0.90);
+    /* Matchar bakgrundsfärgen */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Lägger sig över absolut allt annat */
+    z-index: 9999;
+    /* Lägger sig över absolut allt annat */
 }
 
 /* Själva meddelanderutan */
 .cookie-box {
-    background: #1a1d24; /* Samma mörka färg som meny/spelboxar */
+    background: #1a1d24;
+    /* Samma mörka färg som meny/spelboxar */
     padding: 40px;
     border-radius: 15px;
-    border: 2px solid #00d4ff; /* Neonblå ram */
+    border: 2px solid #00d4ff;
+    /* Neonblå ram */
     text-align: center;
     box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
     max-width: 450px;
@@ -165,7 +175,8 @@ h2 {
 }
 
 .cookie-box h2 {
-    color: #00d4ff; /* Neonblå */
+    color: #00d4ff;
+    /* Neonblå */
     margin-top: 0;
     font-size: 1.8rem;
 }
@@ -187,12 +198,14 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Audiowide", sans-serif; /* Använder samma typsnitt som texten*/
+    font-family: "Audiowide", sans-serif;
+    /* Använder samma typsnitt som texten*/
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-ja {
-    background-color: #00d4ff; /* Neonblå */
+    background-color: #00d4ff;
+    /* Neonblå */
     color: #0b0e14;
 }
 
@@ -202,7 +215,8 @@ h2 {
 }
 
 .btn-nej {
-    background-color: #ff007b; /* Neonrosa */
+    background-color: #ff007b;
+    /* Neonrosa */
     color: #ffffff;
 }
 
